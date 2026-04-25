@@ -1,0 +1,24 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "cross-env $env:TEST_ENV='dev'; npx playwright test HandleMulEvn.spec.ts ",
+    "test:uat": "cross-env $env:TEST_ENV='uat'; npx playwright test HandleMulEvn.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.6.0"
+  },
+  "dependencies": {
+    "allure-playwright": "^3.6.0",
+    "cross-env": "^10.1.0",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.4.1"
+  }
+}
